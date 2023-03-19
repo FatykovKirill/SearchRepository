@@ -14,7 +14,6 @@ btn.addEventListener('click', () => {
         .then(res => res.json())
         .then(data => {
             const items = data.items;
-            console.log(items);
             if (items.length == 0) {
                 return list.innerHTML = 'Ничего не найдено'
             }
